@@ -2,6 +2,9 @@
 padding: 0;
 box-sizing: border-box;
 }
+body {
+    background-color: #ECECFD;
+    color: #070764;
 body h3, p {
     font-family: 'Barlow', sans-serif;
 }
