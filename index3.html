@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mandy Thom Portfolio Page: Contact</title>
+        <link rel="stylesheet" href="./style3.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&family=Satisfy&family=Tillana:wght@600&display=swap" rel="stylesheet">
+        <link href="./script.js">
+    </head>
+    <body>
+        <main>
+            
+<!--Sidebar Menu-->
+            <nav class="mainnav">
+                <ul role="presentation">
+                    <li><a href="./index.html#about" target="_self">About Me</a></li>
+                    <li><a href="./index.html#projects" target="_self">My Projects</a></li>
+                    <li><a href="./index.html#skills" target="_self">Skills</a></li>
+                    <li><a href="./index2.html" target="_self">Contact Me</a></li>
+                </ul>
+            </nav>
+<!--Name-->
+            <section class="main">
+                <div class="name">
+                    <h1>Mandy Thom</h1>
+                    <h2>Full-Stack Web Developer (in training)</h2>
+                </div>
+                <div class="form">
+                    <h2>Email Contact Form</h2>
+                    <p>(All fields are required.)</p>
+                    <form action="mailto:webdev4christ@yahoo.com" method="get">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" aria-required="true">
+                        <br>
+                        <label for="email">Email Address:</label>
+                        <input type="email" name="email" id="email" aria-required="true">                        
+                        <br>
+                        <label for="subject">What can I help you with?</label>
+                        <select id="subject" name="subject" aria-required="true">
+                            <option value="newsite">I need a new website.</option>
+                            <option value="broken">My website is broken.</option>
+                            <option value="update">My website needs updated.</option>
+                            <option value="other">Something Else.</option>
+                        </select>
+                        <br>
+                        <label class='message' for="message">More Details:</label>
+                        <textarea type="text" id="message" name="message" placeholder="Describe your project/problem here." minlength="10" maxlength="600" aria-required="true"></textarea>
+                        <br>
+                        <input class="submit" type="submit" value="Send Message">
+                    </form>
+                </div>
+            </section>
+    <!--Footer-->
+            <section class="footer" id="footer">
+                <p>Copyright: WebDes4Christ </p>
+                <a href="./index2.html" target="_self">Contact Me</a>
+                <a href="#top">Back to top</a>
+                <embed src="./assets/facebook_logo.png" alt="Facebook Logo" type="image/png">
+                <embed src="./assets/messenger_logo.png" alt="Facebook Messenger Logo" type="image/png">
+                <embed src="./assets/instagram_logo.png" alt="Instagram Logo" type="image/png">
+                <embed src="./assets/twitter_logo.png" alt="Twitter Logo" type="image/png">
+                <embed src="./assets/linkedin_logo.png" alt="LinkedIn Logo" type="image/png">
+            </section>
