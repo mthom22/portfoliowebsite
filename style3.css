@@ -74,6 +74,12 @@
         font-family: 'Barlow', sans-serif;
         font-size: 2rem;
     }
+    .form h2 {
+        font-size: 3rem;
+    }
+    .form p {
+        font-size: 2rem;
+    }
     form.input {
         font-size: 1.5rem;
     }
