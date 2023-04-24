@@ -23,10 +23,13 @@
         font-size: 1.5rem;
     }
     /*Sidebar Menu*/
+
+    nav {
     nav select {
         display: none;
     }
     nav ul {
+     main
         background-color: #1717ee;
         font-family: 'Tillana', cursive;
         font-size: 1rem;
@@ -72,6 +75,7 @@
             color: #ececfd;
         }
     }
+     main
     /*Contact*/
     .main {
         display:grid;
