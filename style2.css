@@ -1,0 +1,113 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+    background-color: #ECECFD;
+    color: #070764;
+    }
+    body h3, p {
+        font-family: 'Barlow', sans-serif;
+        font-size: 1.2rem;
+    }
+    body p {
+        font-family: 'Barlow', sans-serif;
+        font-size: 1rem;
+    }
+    body h1 {
+        font-family: 'Satisfy', cursive;
+        font-size: 3rem;
+    }
+    body h2 {
+        font-family: 'Tillana', cursive;
+        font-size: 1.5rem;
+    }
+    /*Sidebar Menu*/
+    nav select {
+        display: none;
+    }
+    nav ul {
+        background-color: #1717ee;
+        font-family: 'Tillana', cursive;
+        font-size: 1rem;
+        position: fixed;
+        justify-content: left;
+        height: 100%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 1.5em;
+    }
+    .mainnav li :link {
+        color: #ececfd;
+    }
+    .mainnav li :visited {
+        color: #edc618;
+        text-decoration: underline;
+    }
+    .mainnav li :hover {
+        cursor: pointer
+    }
+    .mainnav li :active {
+        color:#7575f5;
+    }
+    .mainnav ul li{
+        padding-left:  0.5em;
+        padding-right: 0.5em;
+        text-decoration: none;
+    }
+    /*NAV CHANGES FOR SMALL SCREENS*/
+    @media only screen and (max-width:768px) {
+        nav ul {
+            display: none;
+        }
+        nav select {
+            display: inline-block;
+            background-color: #1717ee;
+            font-family: 'Tillana', cursive;
+            font-size: 1rem;
+            position: fixed;
+            justify-content: left;
+            color: #ececfd;
+        }
+    }
+    /*Contact*/
+    .contact {
+        display:grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: 3fr 6fr 3fr 4fr;
+    }
+    .name {
+        display:grid;
+        grid-area: 1/2/2/3;
+        justify-items: center;
+    }
+    .contactinfo {
+        display: grid;
+        grid-area: 2/2/3/3;
+    }
+    .thanks {
+        display: grid;
+        grid-area: 4/2/5/3;
+        align-items: flex-end;
+        padding-right: 3rem;
+    }
+    .thanks p em {
+        font-family: 'Satisfy', cursive;
+        font-size: 1.2rem;
+        font-style: normal;
+    }
+    .footer {
+        display:flex;
+        position: relative;
+        bottom: 0;
+        justify-content: space-between;
+        padding-left: 8rem;
+        padding-top: 20rem;
+    }
+    .footer embed {
+        max-height: 1.5rem;
+    }

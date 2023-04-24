@@ -1,0 +1,174 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+    background-color: #ECECFD;
+    color: #070764;
+    }
+    body h3, p {
+        font-family: 'Barlow', sans-serif;
+    }
+    body p {
+        font-family: 'Barlow', sans-serif;
+        font-size: 1rem;
+    }
+    body h1 {
+        font-family: 'Satisfy', cursive;
+    }
+    body h2 {
+        font-family: 'Tillana', cursive;
+    }
+    /*Sidebar Menu*/
+    /*Sidebar Menu*/
+    nav select {
+        display: none;
+    }
+    nav ul {
+        background-color: #1717ee;
+        font-family: 'Tillana', cursive;
+        font-size: 1rem;
+        position: fixed;
+        justify-content: left;
+        height: 100%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 1.5em;
+    }
+    .mainnav li :link {
+        color: #ececfd;
+    }
+    .mainnav li :visited {
+        color: #edc618;
+        text-decoration: underline;
+    }
+    .mainnav li :hover {
+        cursor: pointer
+    }
+    .mainnav li :active {
+        color:#7575f5;
+    }
+    .mainnav ul li{
+        padding-left:  0.5em;
+        padding-right: 0.5em;
+        text-decoration: none;
+    }
+    /*NAV CHANGES FOR SMALL SCREENS*/
+    @media only screen and (max-width:768px) {
+        nav ul {
+            display: none;
+        }
+        nav select {
+            display: inline-block;
+            background-color: #1717ee;
+            font-family: 'Tillana', cursive;
+            font-size: 1rem;
+            position: fixed;
+            justify-content: left;
+            color: #ececfd;
+        }
+    }
+    /*Name*/
+    .name {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr 4fr 2fr;
+        grid-template-rows: 3fr 1fr 6fr;
+    }
+    .name h1 {
+        grid-area: 1/2/2/3;
+        font-size: 3rem;
+    }
+    .name h2 {
+        grid-area: 2/2/3/3;
+        font-size: 1.5rem;
+    }
+    .name .photo {
+        grid-area: 1/3/4/4;
+        max-width: 20rem;
+    }
+    /*About Me*/
+    .about {
+        display:grid;
+        align-items: start;
+        justify-items: left;
+        grid-area: 3/2/4/3;
+    }
+    .about h3 {
+        font-size: 1.2rem;
+        padding-left: 1.5rem;
+    }
+    .about p {
+        font-size: 1rem;
+        padding-left: 1.5rem;
+    }
+    @media only screen and (max-width:768px) {
+        .name {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: space-around;
+            align-items: center;
+        }
+        .name h2 {
+            font-size: 1.25rem;
+        }
+    }
+    /*Projects*/
+    .projectsskills {
+        display:grid;
+        grid-template-columns: 1fr 4fr 2fr;
+        grid-template-rows: 6fr 3fr 1fr;
+        align-items: start;
+        flex-wrap: wrap;
+    }
+    .projects {
+        grid-area: 1/2/2/3;
+        padding-left: 1.5rem;
+    }
+    .projects h3 {
+        font-size: 1.2rem;
+    }
+    .projects p {
+        font-size: 1rem;
+    }
+    .skills {
+        grid-area: 1/3/2/4;
+    
+    }
+    .skills h3 {
+        font-size: 1.2rem;
+        text-align: left;
+        align-content: space-between;
+    }
+    .skills embed {
+        max-height: 3rem;
+    }
+    @media only screen and (max-width:768px) {
+        .projects {
+            grid-area: 1/1/2/3;
+        }
+    }
+    .footer {
+        display:flex;
+        grid-area: 3/2/4/4;
+        justify-content: space-between;
+    }
+    .footer embed {
+        max-height: 1.5rem;
+    }
+    
+    @media only screen and (max-width:768px) {
+        .footer p, .footer a {
+           font-size: 0.75rem;
+        }
+        .footer embed {
+            max-height: 1rem;
+        }
+        .footer {
+            grid-area: 3/1/4/4;
+        }
+        }
