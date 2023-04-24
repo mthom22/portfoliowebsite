@@ -23,13 +23,10 @@
         font-size: 1.5rem;
     }
     /*Sidebar Menu*/
-
-    nav {
     nav select {
         display: none;
     }
     nav ul {
-     main
         background-color: #1717ee;
         font-family: 'Tillana', cursive;
         font-size: 1rem;
@@ -75,68 +72,33 @@
             color: #ececfd;
         }
     }
-     main
     /*Contact*/
-    .main {
+    .contact {
         display:grid;
-        align-content: center;
-        justify-content: center;
+        align-items: center;
+        justify-items: center;
         grid-template-columns: 1fr 6fr;
-        grid-template-rows: 3fr 3fr 6fr  4fr;
+        grid-template-rows: 3fr 6fr 3fr 4fr;
     }
     .name {
         display:grid;
         grid-area: 1/2/2/3;
         justify-items: center;
     }
-    .form {
-        display:grid;
-        grid-area: 3/2/4/3;
-        justify-items: center;        
-        font-family: 'Barlow', sans-serif;
-        font-size: 2rem;
+    .contactinfo {
+        display: grid;
+        grid-area: 2/2/3/3;
     }
-    .form h2 {
-        font-size: 3rem;
+    .thanks {
+        display: grid;
+        grid-area: 4/2/5/3;
+        align-items: flex-end;
+        padding-right: 3rem;
     }
-    .form p {
-        font-size: 2rem;
-    }
-    form.input {
-        font-size: 1.5rem;
-    }
-    input, select {
-        height: 2rem;
-    }
-    select {
-        font-size: 1.5rem;
-    }
-    textarea {
-        height: 6rem;
-        font-size: 1.5rem;
-        vertical-align: top;
-    }
-    form label input {
-        padding-bottom: 2rem;
-    }
-    .form h2, .form p {
-        text-align: center;        
-        font-family: 'Barlow', sans-serif;
-    }
-    input.submit {
-        padding: 5px;
-        border: 1px solid #070764;
-        border-radius: 5px;
-        text-decoration: none;
-        box-shadow: 0px 5px;
-    }
-    input.submit:hover {
-        cursor:pointer;
-    }
-    input.submit:active {
-        margin-top: 5px;
-        color: #070764;
-        box-shadow: 0px 0px;
+    .thanks p em {
+        font-family: 'Satisfy', cursive;
+        font-size: 1.2rem;
+        font-style: normal;
     }
     .footer {
         display:flex;

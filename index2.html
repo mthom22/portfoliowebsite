@@ -3,11 +3,10 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Mandy Thom Portfolio Page: Contact</title>
-        <link rel="stylesheet" href="./style3.css">
+        <link rel="stylesheet" href="./style2.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&family=Satisfy&family=Tillana:wght@600&display=swap" rel="stylesheet">
-        <link href="./script.js">
     </head>
     <body>
         <main>
@@ -19,8 +18,7 @@
                     <li><a href="./index.html#projects" target="_self">My Projects</a></li>
                     <li><a href="./index.html#skills" target="_self">Skills</a></li>
                     <li><a href="./index2.html" target="_self">Contact Me</a></li>
-                </ul>
-
+                </ul>                
 
                 <select>
                     <option value="" selected="selected">Menu</option>
@@ -29,40 +27,28 @@
                     <option value="skills" href="./index.html#skills" target="_self">Skills</option>
                     <option value="contact" href="./index2.html" target="_self">Contact Me</option>
                 </select>
-     main
             </nav>
-<!--Name-->
-            <section class="main">
+<!--Contact Info-->
+            <section class="contact" id="contact">
                 <div class="name">
                     <h1>Mandy Thom</h1>
                     <h2>Full-Stack Web Developer (in training)</h2>
                 </div>
-                <div class="form">
-                    <h2>Email Contact Form</h2>
-                    <p>(All fields are required.)</p>
-                    <form action="mailto:webdev4christ@yahoo.com" method="get" id="form">
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" id="name" aria-required="true">
-                        <br>
-                        <label for="email">Email Address:</label>
-                        <input type="email" name="email" id="email" aria-required="true">                        
-                        <br>
-                        <label for="subject">What can I help you with?</label>
-                        <select id="subject" name="subject" aria-required="true">
-                            <option value="newsite">I need a new website.</option>
-                            <option value="broken">My website is broken.</option>
-                            <option value="update">My website needs updated.</option>
-                            <option value="other">Something Else.</option>
-                        </select>
-                        <br>
-                        <label class='message' for="message">More Details:</label>
-                        <textarea type="text" id="message" name="message" placeholder="Describe your project/problem here." minlength="10" maxlength="600" aria-required="true"></textarea>
-                        <br>
-                        <input class="submit" type="submit" value="Send Message" id="submit">
-                    </form>
+                <div class="contactinfo">
+                    <h3>Contact Me</h3>
+                    <p><strong>Email:</strong> webdes4christ@yahoo.com</p>
+                    <p><strong>Phone:</strong>(817)874-7182</p>
+                    <p><strong>Address:</strong> 2000 County Rd 213, Alvarado, TX, 76009</p>
                 </div>
-            </section>
-    <!--Footer-->
+            
+<!--Thank You-->
+                <div class="thanks" id="thanks">
+                    <h3>Thank You!!</h3>
+                    <p>Thank you for visiting my portfolio site! I truly hope you found it interesting and enjoyable. If you haven't yet, please, take a look at some of my projects. contact me if you have any questions or, if you have a project of your own that I might be able to help you with.</p>
+                    <p>Thanks, again! <em>Mandy</em></p>
+                </div>
+            </section>    
+<!--Footer-->
             <section class="footer" id="footer">
                 <p>Copyright: WebDes4Christ </p>
                 <a href="./index2.html" target="_self">Contact Me</a>
@@ -72,4 +58,6 @@
                 <embed src="./assets/instagram_logo.png" alt="Instagram Logo" type="image/png">
                 <embed src="./assets/twitter_logo.png" alt="Twitter Logo" type="image/png">
                 <embed src="./assets/linkedin_logo.png" alt="LinkedIn Logo" type="image/png">
-            </section>
+            </section>            
+        </main>
+    </body>
